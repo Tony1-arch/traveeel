@@ -36,19 +36,19 @@ function Searchanddate() {
       
   return (
     
-    <div className='search'>
-    {  /*   country picker */ }
+   
     <div className="main-search">
       <div  className="inner-search" >
  
-             <input type="text"  onChange={onChange}  value={value} placeholder='Search Your location' className='countyinput'/>
+             <input type="text"  onChange={onChange}  value={value} placeholder='location' className='countyinput'/>
             <div className="drop-list">
             
             {
               value && data.filter(item => item.name.startsWith(value) && item.name !== value)
              .slice(0,1).map(item => 
              <div key={item.id} onClick={(e)=> setValue(item.name)}>
-             <h2>{item.name} </h2>   
+             <h2>{item.name} </h2>  
+
              </div>
              )
             }
@@ -59,16 +59,18 @@ function Searchanddate() {
 
  
       
-      <div className='innerDatepicker'>
+   <div className='innerDatepicker'>
     
     {/* datepicker  */}
 
-  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} selectionMode="range" placeholder='choose dates' className='calendarrr'/>
-  <button id='btn' onClick={onSubmit} >Submit</button>
+  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} selectionMode="range" placeholder='dates' className='calendarrr'/>
+ 
+  
 </div>
-      
-      </div>
-    </div>
+  <div className="buton-contain">
+  <button id='btn' onClick={onSubmit} >Submit</button>
+  </div>
+   </div>
   )
 }
 

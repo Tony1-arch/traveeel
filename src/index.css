@@ -395,15 +395,7 @@ a.slide__next,
 
 
 
-.search{
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  
-}
+
 .main-search{
   width: 60%;
   border-radius: 10px;
@@ -413,6 +405,19 @@ a.slide__next,
   justify-content: space-around;
   align-items: center;
 }
+.main-search{
+  width: 100%;
+  overflow: hidden;
+  
+  margin-right: 10px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around ;
+  align-items: flex-start;
+
+}
+
 .inner-search{
   overflow: hidden;
   display:inline;
@@ -430,6 +435,17 @@ a.slide__next,
 
   border: 1px solid blue;
 }
+.buton-contain #btn{
+  background-color: #04AA6D; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: block;
+border-radius: 10px;
+font-size: 16px;
+}
 
 .innerDatepicker button {
   background-color: #04AA6D; /* Green */
@@ -444,56 +460,123 @@ a.slide__next,
   font-size: 16px;
   }
   /*  search&date media query */
-  @media (min-width: 576px) { 
+  @media (max-width: 480px) { 
     .main-search{
-      width: 100%;
-    
-      padding: 10px 0px;
+      width: 480px;
+      overflow: hidden;
+      
+      margin-right: 10px;
+      
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .inner-search{
-    width: 35%;
+      flex-direction: row;
+      justify-content:space-around ;
+      align-items: flex-start;
     
-    margin: 0 10px;
-    }
-    .countyinput{
-      width: 50px;
-    }
-    .innerDatepicker{
-      width: 65%;
-      padding: 0 7.3px 0 0;
-    }
-   }
-   @media (max-width: 768px) { 
-    .innerDatepicker{
-      width: 100%;
-      
     }
     .inner-search{
-      width: 50%;
-      
-      margin: 0 10px;
-      }
-      .search{
-        width: 100%;
-        
+     
+    margin: 0 20px 0 0px;
+    display: flex;
+    flex-direction: column;
+     
+    }
+    .inner-search .countyinput:focus{
+    color:blue;
+    
+    outline: white;
+    border: none;
+    }
+   .drop-list h2{
+     color:blue;
+   }
+    
+   
+    .innerDatepicker{
+     width: 50%;
+     margin-right:20px ;
+     
+  
+   }
+
+   .calendarrr:focus{
+    border: none;
+   }
+
+   .buton-contain{
+     width: 40%;
+     padding: 0 30px 0 10px;
+   }
+  .buton-contain #btn{
+    background-color: #04AA6D; 
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  font-size: 16px;
+  }
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px){
+    
+      .main-search{
+        width: 767px;
+        overflow: hidden;
+
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content:space-around ;
         align-items: center;
+      
+      }
+      .inner-search{
+       
+      margin: 0 30px 0 0px;
+      display: flex;
+      flex-direction: column;
        
       }
-      .main-search{
-        width: 100%;
-        padding-left: 50px;
-        
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+      .inner-search .countyinput:focus{
+      color:blue;
+      
+      outline: white;
+      border: none;
       }
-   
-   }
+     .drop-list h2{
+       color:blue
+     }
+      
+     
+      .innerDatepicker{
+       width: 50%;
+       padding-right: 0px;
+       
+    
+     }
+  
+     .calendarrr:focus{
+      border: none;
+     }
+  
+     .buton-contain{
+       width: 20%;
+       padding: 0 10px 0 10px;
+     }
+    .buton-contain #btn{
+      background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    font-size: 16px;
+    }
+    
+  }
 
 /*   fourcards */
   .containerCard{
