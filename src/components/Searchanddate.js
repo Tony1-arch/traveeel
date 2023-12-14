@@ -41,7 +41,7 @@ function Searchanddate() {
     <div className="main-search">
       <div  className="inner-search" >
  
-             <input type="text"  onChange={onChange}  value={value} placeholder='Search Your location'/>
+             <input type="text"  onChange={onChange}  value={value} placeholder='Search Your location' className='countyinput'/>
             <div className="drop-list">
             
             {
@@ -63,7 +63,7 @@ function Searchanddate() {
     
     {/* datepicker  */}
 
-  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} selectionMode="range" placeholder='choose dates'/>
+  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} selectionMode="range" placeholder='choose dates' className='calendarrr'/>
   <button id='btn' onClick={onSubmit} >Submit</button>
 </div>
       
