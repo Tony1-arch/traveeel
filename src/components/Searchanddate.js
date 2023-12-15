@@ -2,6 +2,7 @@ import React, {  useState } from 'react'
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 
+import Stack from 'react-bootstrap/Stack';
 import {Calendar} from "primereact/calendar"
 function Searchanddate() {
 
@@ -37,39 +38,44 @@ function Searchanddate() {
   return (
     
    
-    <div className="main-search">
-      <div  className="inner-search" >
+    <div className="main-se">
+  <Stack direction="horizontal" gap={1}>
+      <div className="p-2">
+      <div  >
  
-             <input type="text"  onChange={onChange}  value={value} placeholder='location' className='countyinput'/>
-            <div className="drop-list">
-            
-            {
-              value && data.filter(item => item.name.startsWith(value) && item.name !== value)
-             .slice(0,1).map(item => 
-             <div key={item.id} onClick={(e)=> setValue(item.name)}>
-             <h2>{item.name} </h2>  
+ <input type="text"  onChange={onChange} className='inputCountry'  value={value} placeholder='location' />
+<div >
 
-             </div>
-             )
-            }
-          
-        
-  </div>  
-            </div>
+{
+  value && data.filter(item => item.name.startsWith(value) && item.name !== value)
+ .slice(0,1).map(item => 
+ <div key={item.id} onClick={(e)=> setValue(item.name)}>
+ <h2>{item.name} </h2>  
 
- 
-      
-   <div className='innerDatepicker'>
+ </div>
+ )
+}
+
+
+</div>  
+</div>
+      </div>
+      <div className="p-2 ">
+      <div >
     
     {/* datepicker  */}
 
-  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} selectionMode="range" placeholder='dates' className='calendarrr'/>
+  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} className=".inputDate" selectionMode="range" placeholder='dates'/>
  
   
 </div>
-  <div className="buton-contain">
-  <button id='btn' onClick={onSubmit} >Submit</button>
+      </div>
+      <div className="p-2">
+      <div>
+      <button id="btn" onClick={onSubmit} className='btn-search' variant="success">Submit</button>
   </div>
+      </div>
+    </Stack>
    </div>
   )
 }

@@ -1,4 +1,4 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Route,  RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
@@ -14,7 +14,7 @@ const router = createBrowserRouter(
 )
 function App() {
   return (
-    <div className='App'>
+    <div className='app'>
      <RouterProvider router={router}/>
     </div>  
   );
