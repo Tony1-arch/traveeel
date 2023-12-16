@@ -1,6 +1,9 @@
 import React, {  useState } from 'react'
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import Stack from 'react-bootstrap/Stack';
 import {Calendar} from "primereact/calendar"
@@ -50,8 +53,12 @@ function Searchanddate() {
   value && data.filter(item => item.name.startsWith(value) && item.name !== value)
  .slice(0,1).map(item => 
  <div key={item.id} onClick={(e)=> setValue(item.name)}>
- <h2>{item.name} </h2>  
-
+   
+ <Container>
+      <Row>
+        <Col><h2>{item.name} </h2>  </Col>
+      </Row>
+    </Container>
  </div>
  )
 }

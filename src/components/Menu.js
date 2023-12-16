@@ -9,11 +9,14 @@ const Menu = ({ items }) => {
           <article key={id} className="menu-item">
             <img src={img} alt={title} className="photo" />
             <div className="item-info">
-              <header>
+              
                 <h4>{title}</h4>
                 
-              </header>
-              <p className="item-text">{desc}</p>
+              
+              <div className="item-text">
+              <p>{desc}</p>
+              </div>
+              
               <div className="footter">
               <div>
               <h6>Km {km}</h6>

@@ -97,13 +97,38 @@ h1 h2 h4 h5 h6 p  {
   border-radius: 10px;
   font-size: 16px;
 }
-
-@media (min-width: 367px) and (max-width: 1600px){
+@media (max-width: 367px){
   .main-se{
     display: flex;
     align-items:center ;
     justify-content: center;
     width: 100%;
+    padding: 150px  0;
+  }
+  .inputCountry:focus .main-se{
+    padding-bottom: 140px;
+  }
+}
+@media (min-width: 367px) and (max-width: 767px){
+  .main-se{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    width: 100%;
+    padding: 120px  0;
+  }
+  .inputCountry:focus .main-se{
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1600px){
+  .main-se{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    width: 100%;
+    padding-top: 80px ;
   }
 }
 
@@ -176,9 +201,7 @@ h1 h2 h4 h5 h6 p  {
         margin-top: 305px;
         height: 59vh;
       }
-      .main-se{
-        padding: 50px 5px 100px 5px;
-      }
+      
     }
     @media (max-width: 767px){
       .containerCard{
@@ -308,7 +331,7 @@ h1 h2 h4 h5 h6 p  {
     .btn-container .filter-btn:hover{
     border-bottom: 2px solid blue;
     }
-
+    @media (max-width:1600px){
     .section-center{
       width: 100%;
       padding: 30px 30px;
@@ -338,6 +361,7 @@ h1 h2 h4 h5 h6 p  {
       font-size: 1.6rem;
       font-weight: 600;
       text-align: start;
+      padding-left: 60px; 
       padding-left: 60px;
       color: #0e2057;
 
@@ -362,17 +386,20 @@ h1 h2 h4 h5 h6 p  {
     h6{
       color: #1d3ea1;
     }
+  }
     @media (max-width: 376px) { 
       .menuu-section{
-        height: 100vh;
-        margin-top: 170px;
+        min-height: 100vh;
+        margin-top: 190px;
       }
       .menuu-section .title{
-        padding: 10px 0;
+        width: 100%;
+        padding: 40px 2px 20px 2px;
       }
       .menuu-section .title h2{
-        font-size: 1.8rem;
-        font-weight: 700;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: center;
       }
       .btn-container{
       width: 100%;
@@ -400,16 +427,226 @@ h1 h2 h4 h5 h6 p  {
     }
     .section-center{
       width: 100%;
-      padding: 30px 30px;
-      place-items: center;
+      padding: 2px 2px;
+      place-items:start;
       place-content: center;
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-gap:0.5rem;
-      
+      grid-template-columns: repeat(1,1fr);
+      grid-gap:0.1rem;
+    
       
     }
-     }
+    .section-center .menu-item{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top:40px ;
+    }
+    .menu-item .photo{
+      width: 100%;
+      
+      object-fit: cover;
+    }
+    .menu-item .item-info{
+      width: 100%;
+      inset: 0;
+      padding: 0;
+    }
+    .menu-item .item-info h4{
+      text-align: center;
+      
+      padding-left: 0; 
+    }
+    .item-info  .item-text{
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding-bottom: 6px;
+    
+      
+    
+    }
+    .item-text p{
+      width: 100%;
+      text-align: center;
+     padding: 0;
+      margin: 0;
+    }
+    .footter{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0px;
+      justify-content: space-evenly;
+    }
+    .footter .night h6 {
+      margin-bottom: -14px;
+      color: #1d3ea1;
+    }
+  }
+    @media (min-width: 376px) and (max-width:767px){
+      .section-center{
+        width: 100%;
+        padding: 2px 2px;
+        place-items:center;
+        place-content: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:1.5rem;
+      
+        
+      }
+      .section-center .menu-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:40px ;
+      }
+      .item-info  .item-text{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 6px;
+      
+        
+      
+      }
+      .item-info {
+        padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      }
+      .item-info h4{
+        padding: 10px 0px;
+      }
+      .item-text p{
+        width: 100%;
+        text-align: center;
+       padding: 0;
+        margin: 0;
+      }
+      .footter{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: space-evenly;
+      }
+      .footter .night h6 {
+        margin-bottom: -14px;
+        color: #1d3ea1;
+      }
+      .item-info  .item-text{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 6px;
+      
+        
+      
+      }
+      .menuu-section .title{
+        width: 100%;
+        padding: 60px 2px 40px 2px;
+      }
+      .menuu-section .title h2{
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+    @media (min-width: 767px) and (max-width:1550px){
+      .section-center{
+        width: 100%;
+        padding: 2px 2px;
+        place-items:center;
+        place-content: center;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:2rem;
+      
+        
+      }
+      .section-center .menu-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:40px ;
+      }
+      .item-info  .item-text{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 6px;
+      
+        
+      
+      }
+      .item-info {
+        padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      }
+      .item-info h4{
+        padding: 10px 0px;
+      }
+      .item-text p{
+        width: 100%;
+        text-align: center;
+       padding: 0;
+        margin: 0;
+      }
+      .footter{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: space-evenly;
+      }
+      .footter .night h6 {
+        margin-bottom: -14px;
+        color: #1d3ea1;
+      }
+      .item-info  .item-text{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 6px;
+      
+        
+      
+      }
+      .menuu-section .title{
+        width: 100%;
+        padding: 60px 2px 40px 2px;
+      }
+      .menuu-section .title h2{
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+
+/* 
      @media (min-width: 768px) { 
       .btn-container .filter-btn{
         background-color: #ffff;
@@ -423,7 +660,7 @@ h1 h2 h4 h5 h6 p  {
         text-align: left;
         outline: none;
       }
-      }
+      } */
 
    /*  header-blog */
     .header-blog{
