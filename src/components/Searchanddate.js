@@ -72,7 +72,7 @@ function Searchanddate() {
     
     {/* datepicker  */}
 
-  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} className=".inputDate" selectionMode="range" placeholder='dates'/>
+  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} className=".inputDate" selectionMode="range" placeholder='Choose Dates'/>
  
   
 </div>
