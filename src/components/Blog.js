@@ -2,7 +2,7 @@ import React from 'react'
 
 function Blog() {
   return (
-    <div>
+    
       <div className="header-blog">
             <h2>BLOG</h2>
             <div className="container-blog">
@@ -20,7 +20,7 @@ function Blog() {
 
             </div>
       </div>
-    </div>
+    
   )
 }
 
