@@ -33,7 +33,7 @@ const Menu = ({ items }) => {
         );
       })}
     </div>
-  );
+  )
 };
 
 export default Menu;

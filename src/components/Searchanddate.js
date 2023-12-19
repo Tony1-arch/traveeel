@@ -46,7 +46,7 @@ function Searchanddate() {
       <div className="p-2">
       <div  >
  
- <input type="text"  onChange={onChange} className='inputCountry'  value={value} placeholder='location' />
+ <input type="text"  onChange={onChange} className='inputCountry'  value={value} placeholder='Destination' />
 <div >
 
 {
