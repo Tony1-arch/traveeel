@@ -72,14 +72,14 @@ function Searchanddate() {
     
     {/* datepicker  */}
 
-  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} className=".inputDate" selectionMode="range" placeholder='Choose Dates'/>
+  <Calendar value={dateRange} onChange={(e) => setDateRange(e.value)} className=".inputDate" selectionMode="range" placeholder='Check-in | Check-out'/>
  
   
 </div>
       </div>
       <div className="p-2">
       <div>
-      <button id="btn" onClick={onSubmit} className='btn-search' variant="success">Submit</button>
+      <button id="btn" onClick={onSubmit} className='btn-search' variant="success">EXPLORE NOW</button>
   </div>
       </div>
     </Stack>
