@@ -22,7 +22,7 @@ function Searchanddate() {
     /*   country picker */
       const [value , setValue] = useState(); 
       const [data, setData] = useState([{id:1,name:'uganda'},{id:2,name:'kenya'},{id:3,name:'united States Of America'},{id:4,name:'united Arab Emirates'},
-      {id:5,name:'poland'},
+      {id:5,name:'Poland'},
       {id:6,name:'india'},
       {id:7,name:'tanzania'},
       {id:8,name:'russia'},
