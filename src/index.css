@@ -16,8 +16,7 @@ body,html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: hsl(210, 36%, 96%);
-  color: hsl(209, 61%, 16%);
+  background: white
 }
 
 code {
@@ -330,63 +329,7 @@ h1 h2 h4 h5 h6 p  {
     .btn-container .filter-btn:hover{
     border-bottom: 2px solid blue;
     }
-  /*   @media (max-width:1600px){
-    .section-center{
-      width: 100%;
-      padding: 30px 30px;
-      
-  
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-gap:0.5rem;
-      
-    }
-    .section-center .menu-item{
-      margin: 20px 0 30px 0;
-    }
-    .section-center .photo{
-      width: 80%;
-      height: 65%;
-      object-fit: cover;
-      padding: 20px;
-      
-      border-radius: 30px;
-
-    }
-    .section-center .photo img{
-      border-radius: 50px;
-    }
-    .section-center h4{
-      font-size: 1.6rem;
-      font-weight: 600;
-      text-align: start;
-      padding-left: 60px; 
-      padding-left: 60px;
-      color: #0e2057;
-
-    }
-    .section-center p{
-     text-align: left;
-     font-size: 0.8rem;
-     padding: 0 60px;
-     color: #2e5ade;
-    }
-    .footter{
-      margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-      padding: 0 25px;
-      justify-content: space-evenly;
-    }
-    .footter .night h6 {
-      margin-bottom: -12px;
-      color: #1d3ea1;
-    }
-    h6{
-      color: #1d3ea1;
-    }
-  } */
-
+ 
   @media (min-width: 767px){
     .menuu-section{
       
@@ -534,87 +477,6 @@ h1 h2 h4 h5 h6 p  {
   }
 
   
-  /*   @media (min-width: 767px) and (max-width:110px){
-      
-      .section-center{
-        width: 100%;
-        padding: 2px 2px;
-        place-items:center;
-        place-content: center;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap:2rem;
-      
-        
-      }
-      .section-center .menu-item{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top:40px ;
-      }
-      .item-info  .item-text{
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding-bottom: 6px;
-      
-        
-      
-      }
-      .item-info {
-        padding-top: 5px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      }
-      .item-info h4{
-        padding: 10px 0px;
-      }
-      .item-text p{
-        width: 100%;
-        text-align: center;
-       padding: 0;
-        margin: 0;
-      }
-      .footter{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 0px;
-        justify-content: space-evenly;
-      }
-      .footter .night h6 {
-        margin-bottom: -14px;
-        color: #1d3ea1;
-      }
-      .item-info  .item-text{
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding-bottom: 6px;
-      
-        
-      
-      }
-      .menuu-section .title{
-        width: 100%;
-        padding: 60px 2px 40px 2px;
-      }
-      .menuu-section .title h2{
-        font-size: 1.6rem;
-        font-weight: 700;
-        text-align: center;
-      }
-    } */
-
-
 
    /*  header-blog */
     .header-blog{
@@ -1299,7 +1161,7 @@ h1 h2 h4 h5 h6 p  {
     .btn-container{
       max-width: 100%;
       height: 210px;
-      background-color:aliceblue;
+      
       display: flex;
       overflow: hidden;
       flex-direction: row;
@@ -1345,7 +1207,7 @@ h1 h2 h4 h5 h6 p  {
       justify-content: center;
       min-height: 100vh;
       width: 100%;
-      background-color: aliceblue;
+      
     }
     .title{
       width: 100%;
@@ -1356,12 +1218,13 @@ h1 h2 h4 h5 h6 p  {
       text-align: center;
     }
     .btn-container{
-      max-width: 100%;
+      min-width: 100%;
       display: flex;
       overflow: hidden;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      background-color: #ffff;
     }
     .title{
       max-width:100%;
