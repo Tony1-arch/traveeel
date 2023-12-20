@@ -27,7 +27,7 @@ const Mainmmenu = () => {
           
           <h2>Recommended Destination
 </h2>
-          <div className="underline"></div>
+          
         </div>
         <Categories
           categories={categories}
