@@ -1284,7 +1284,26 @@ h1 h2 h4 h5 h6 p  {
     }
   }
 
-  @media   (min-width: 767px)and (max-width: 989px){
+  @media   (min-width: 376px)and (max-width: 989px){
+    .menuu-section{
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+    .title{
+      width: 100%;
+      padding: 10px;
+      overflow: hidden;
+      height: 180px;
+      margin: 20px 0 ;
+    }
+    .title h2{
+      font-size: 1.2rem;
+      white-space: no-wrap;
+    }
     .section-center{
       max-width: 100%;
       min-height: 50vh;
@@ -1293,11 +1312,11 @@ h1 h2 h4 h5 h6 p  {
       display: grid;
       grid-template-columns: repeat(1,1fr);
       overflow: hidden;
-      background: #8e95ab;
+      
       padding: 20px 10px;
     }
     .section-center .menu-item{
-      max-width: 220px;
+      width: 100%;
     
       display: flex;
       flex-direction: column;
@@ -1306,9 +1325,9 @@ h1 h2 h4 h5 h6 p  {
     }
     .menu-item .photo{
       border-radius: 6px;
-      max-width:220px ;
+      width:100% ;
       object-fit: cover;
-      max-height:200px;
+      
     }
   
   }
